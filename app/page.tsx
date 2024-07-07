@@ -1,3 +1,5 @@
+"use client";
+import { About } from "@/components/About";
 import AboutSection from "@/components/AboutSection";
 import { GridBackground } from "@/components/GridBackground";
 import HeroSection from "@/components/HeroSection";
@@ -10,7 +12,9 @@ export default function Home() {
     <div>
       <GridBackground />
       <AboutSection />
+      <About />
       <TechStack />
+      
       {/* <HeroSection /> */}
     </div>
   );
