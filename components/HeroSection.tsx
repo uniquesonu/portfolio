@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Linkedin, Rocket } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const TypeWriter = ({ text, speed = 50 }:any) => {
   const [displayText, setDisplayText] = useState('');
@@ -62,20 +63,25 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
+                <Link href="https://www.linkedin.com/in/uniquesonu" target='_blank'>
                 <span className='flex justify-start items-center'>
                   <Linkedin className="h-6 w-6 mr-2" />
                   Connect With Me
                 </span>
+                </Link>
               </motion.button>
               <motion.button
                 className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-md transition duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
+                <Link href="mailto:its.sonu832@gmail.com">
                 <span className='flex justify-start items-center'>
                   <Rocket className="h-6 w-6 mr-2" />
                   Hire Me
                 </span>
+                </Link>
+                
               </motion.button>
             </div>
           </motion.div>
