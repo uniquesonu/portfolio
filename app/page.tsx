@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection";
 import TechStack from "@/components/TechStacks";
 import Marquees from "@/components/TechStacks";
 import PortfolioWebsite from "@/components/portfolio";
+import RecentProjects from "@/components/RecentProjects";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutSection />
       <About />
       <TechStack />
+      <RecentProjects />
       
       {/* <HeroSection /> */}
     </div>
