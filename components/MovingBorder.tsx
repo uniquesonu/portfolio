@@ -7,7 +7,7 @@ export function MovingBorder() {
     const copyEmail = () => {
         navigator.clipboard.writeText('its.sonu832@gmail.com');
         setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
+        setTimeout(() => setCopied(false), 4000);
       };
   return (
     <div>
