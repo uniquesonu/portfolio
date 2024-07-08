@@ -1,7 +1,6 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import Link from "next/link";
@@ -69,7 +68,7 @@ const RecentProjects = () => {
                 <div className="flex justify-center items-center">
                   <Link href={item.link} target="_blank">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple-500">
-                    Live Link
+                    Live link
                   </p>
                   </Link>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
