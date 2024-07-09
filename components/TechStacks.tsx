@@ -12,7 +12,7 @@ const TechStack = () => {
   ];
 
   return (
-    <div className="py-20 mt-0 md:mt-12 relative overflow-hidden">
+    <div className="py-20 mt-0 md:mt-12 relative overflow-hidden" id='skill'>
         <h1 className="text-white mb-8 text-center text-3xl md:text-5xl font-bold"><span className='flex justify-center items-center gap-4'>My Tech Stack <Rocket className='h-8 w-8'/></span></h1>
       {data.map((item, index) => (
         <Tech key={index} item={item} direction={index === 0 ? "left" : "right"} />
