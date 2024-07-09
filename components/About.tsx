@@ -8,7 +8,7 @@ import { Linkedin } from "lucide-react";
 
 export const About = () => {
   return (
-    <div className="min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50">
+    <div className="min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50" id="about">
       <motion.div
         initial="initial"
         animate="animate"
