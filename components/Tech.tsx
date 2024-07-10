@@ -8,7 +8,7 @@ const Tech = ({ item, direction }:any) => {
       <motion.div
         initial={{ x: direction === "left" ? "0%" : "-100%" }}
         animate={{ x: direction === "left" ? "-100%" : "0%" }}
-        transition={{ ease: "linear", duration: 160, repeat: Infinity }}
+        transition={{ ease: "linear", duration: 150, repeat: Infinity }}
         className="flex flex-shrink-0 gap-40 py-10 pr-40"
       >
         {item.map((tech: string, index: number) => (
@@ -19,7 +19,7 @@ const Tech = ({ item, direction }:any) => {
       <motion.div
         initial={{ x: direction === "left" ? "0%" : "-100%" }}
         animate={{ x: direction === "left" ? "-100%" : "0%" }}
-        transition={{ ease: "linear", duration: 160, repeat: Infinity }}
+        transition={{ ease: "linear", duration: 150, repeat: Infinity }}
         className="flex flex-shrink-0 gap-40 py-10 pr-40"
       >
         {item.map((tech: string, index: number) => (
