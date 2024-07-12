@@ -17,40 +17,40 @@ const navItems = [
   {
     name: "Home",
     link: "/",
-    icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    icon: <IconHome className="h-4 w-4 text-white" />,
 
   },
   {
     name: "About",
     link: "/#about",
-    icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    icon: <IconUser className="h-4 w-4 text-white" />,
 
   },
   {
     name: "Skills",
     link: "/#skill",
-    icon: <GiSkills className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    icon: <GiSkills className="h-4 w-4 text-white" />,
 
   },
   {
     name: "Projects",
     link: "/#project",
     icon: (
-      <VscProject className="h-4 w-4 text-neutral-500 dark:text-white" />
+      <VscProject className="h-4 w-4 text-white" />
     ),
   },
   {
     name: "Contact",
     link: "/#contact",
     icon: (
-      <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      <IconMessage className="h-4 w-4 text-white" />
     ),
   },
 ];
 
 export default function Home() {
   return (
-    <div className="relative  w-full">
+    <div className="relative  w-full bg-black">
       <FloatingNav navItems={navItems} />
       <GridBackground />
       <AboutSection />

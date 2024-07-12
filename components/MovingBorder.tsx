@@ -14,7 +14,7 @@ export function MovingBorder() {
       <Button
       onClick={copyEmail}
         borderRadius="1.5rem"
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 px-6 py-3"
+        className="bg-slate-900 text-white  border-slate-800 px-6 py-3"
       >
         {copied ? 'Email Copied!' : 'Copy my email address'}
       </Button>
