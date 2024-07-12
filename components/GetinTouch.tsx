@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaEnvelope, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 
@@ -65,21 +66,21 @@ const GetInTouch = () => {
 
   return (
     <section className="py-4 px-4 flex flex-col justify-center items-center w-full">
-      <h2 className="text-3xl md:text-4xl text-white font-bold text-center mb-6">Get in Touch</h2>
+      <h2 className="text-3xl md:text-5xl text-white font-bold text-center mb-6">Get in Touch</h2>
       <div className="border-2 border-white p-8 rounded-lg shadow-lg md:min-w-[700px]">
         <div className="flex justify-center space-x-4 mb-6">
-          <a href="#" className="text-purple-400 hover:text-purple-500 transition-colors">
+          <Link href="mailto:its.sonu832@gmail.com" target='_blank' className="text-purple-400 hover:text-purple-500 transition-colors">
             <FaEnvelope size={24} />
-          </a>
-          <a href="#" className="text-purple-400 hover:text-purple-500 transition-colors">
+          </Link>
+          <Link href="https://www.linkedin.com/in/uniquesonu" target='_blank' className="text-purple-400 hover:text-purple-500 transition-colors">
             <FaLinkedin size={24} />
-          </a>
-          <a href="#" className="text-purple-400 hover:text-purple-500 transition-colors">
+          </Link>
+          {/* <Link href="#" className="text-purple-400 hover:text-purple-500 transition-colors">
             <FaTwitter size={24} />
-          </a>
-          <a href="#" className="text-purple-400 hover:text-purple-500 transition-colors">
+          </Link> */}
+          <Link href="https://github.com/uniquesonu" target='_blank' className="text-purple-400 hover:text-purple-500 transition-colors">
             <FaGithub size={24} />
-          </a>
+          </Link>
         </div>
         {error && <div className="text-red-500 text-center mb-4">{error}</div>}
         {success && <div className="text-green-500 text-center mb-4">{success}</div>}
