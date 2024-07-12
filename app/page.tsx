@@ -11,6 +11,7 @@ import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { GiSkills } from "react-icons/gi";
 import { VscProject } from "react-icons/vsc";
+import GetInTouch from "@/components/GetinTouch";
 
 const navItems = [
   {
@@ -26,13 +27,13 @@ const navItems = [
 
   },
   {
-    name: "skill",
+    name: "Skills",
     link: "/#skill",
     icon: <GiSkills className="h-4 w-4 text-neutral-500 dark:text-white" />,
 
   },
   {
-    name: "Project",
+    name: "Projects",
     link: "/#project",
     icon: (
       <VscProject className="h-4 w-4 text-neutral-500 dark:text-white" />
@@ -56,6 +57,7 @@ export default function Home() {
       <About />
       <TechStack />
       <RecentProjects />
+      <GetInTouch />
       
       {/* <HeroSection /> */}
     </div>
