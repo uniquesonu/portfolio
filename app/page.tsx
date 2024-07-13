@@ -12,6 +12,7 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import { GiSkills } from "react-icons/gi";
 import { VscProject } from "react-icons/vsc";
 import GetInTouch from "@/components/GetinTouch";
+import VisitCounter from "@/components/visitcount";
 
 const navItems = [
   {
@@ -52,6 +53,7 @@ export default function Home() {
   return (
     <div className="relative  w-full bg-black">
       <FloatingNav navItems={navItems} />
+      <VisitCounter />
       <GridBackground />
       <About />
       <AboutSection />
