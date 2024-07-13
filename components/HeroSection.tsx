@@ -25,6 +25,18 @@ const TypeWriter = ({ text, speed = 50 }:any) => {
 };
 
 const HeroSection = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://cdn.counter.dev/script.js";
+    script.setAttribute('data-id', '100d59b2-ade5-4d90-b213-9515a19e1958');
+    script.setAttribute('data-utcoffset', '6');
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="text-white py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -64,10 +76,10 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link href="https://www.linkedin.com/in/uniquesonu" target='_blank'>
-                <span className='flex justify-start items-center'>
-                  <Linkedin className="h-6 w-6 mr-2" />
-                  Connect With Me
-                </span>
+                  <span className='flex justify-start items-center'>
+                    <Linkedin className="h-6 w-6 mr-2" />
+                    Connect With Me
+                  </span>
                 </Link>
               </motion.button>
               <motion.button
@@ -76,12 +88,11 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link href="mailto:its.sonu832@gmail.com">
-                <span className='flex justify-start items-center'>
-                  <Rocket className="h-6 w-6 mr-2" />
-                  Hire Me
-                </span>
+                  <span className='flex justify-start items-center'>
+                    <Rocket className="h-6 w-6 mr-2" />
+                    Hire Me
+                  </span>
                 </Link>
-                
               </motion.button>
             </div>
           </motion.div>
