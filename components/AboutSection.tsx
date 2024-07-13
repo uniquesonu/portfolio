@@ -39,7 +39,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className=" text-white py-16 mt-32 md:mt-64 lg:mt-0">
+    <section className=" text-white md:px-16  -mt-32 md:mt-0">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Card 
