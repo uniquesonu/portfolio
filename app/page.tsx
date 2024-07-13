@@ -53,8 +53,8 @@ export default function Home() {
     <div className="relative  w-full bg-black">
       <FloatingNav navItems={navItems} />
       <GridBackground />
-      <AboutSection />
       <About />
+      <AboutSection />
       <TechStack />
       <RecentProjects />
       <GetInTouch />
