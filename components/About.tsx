@@ -8,14 +8,15 @@ import { Linkedin } from "lucide-react";
 
 export const About = () => {
   return (
-    <div className="min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50" id="about">
+    <div className="min-h-screen bg-black px-4 md:px-20 pt-60 md:pt-16 text-zinc-50" id="about">
+      <h1 className="text-5xl text-center font-semibold mb-8">About Me</h1>
       <motion.div
         initial="initial"
         animate="animate"
         transition={{
           staggerChildren: 0.05,
         }}
-        className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4"
+        className="mx-auto grid grid-flow-dense grid-cols-12 gap-4"
       >
         <HeaderBlock />
         <SocialsBlock />
@@ -79,7 +80,7 @@ const HeaderBlock = () => (
       </span>
     </h1>
     <a
-      href="#"
+      href="/#contact"
       className="flex items-center gap-1 text-red-300 hover:underline"
     >
       Contact me <FiArrowRight />
